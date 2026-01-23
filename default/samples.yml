@@ -1,0 +1,35 @@
+lf9ygd:
+  sampleName: secops-palo.log
+  created: 1751498497600
+  size: 5509
+  numEvents: 8
+ndmvgE:
+  sampleName: secops-aws-vpc-flow.log
+  created: 1757427796795
+  size: 260734
+  numEvents: 1000
+  description: AWS VPC Flowlogs
+zXZYhW:
+  sampleName: secops-cisco-asa.log
+  created: 1757607886968
+  size: 575953
+  numEvents: 1000
+  description: Cisco ASA Logs
+gJnquY:
+  sampleName: secops-fortigate-firewall.log
+  created: 1757607955646
+  size: 953528
+  numEvents: 500
+  description: Fortigate Fortinet Firewall Traffic Logs
+mZdAJP:
+  sampleName: secops-pan.log
+  description: Palo Alto Networks Traffic and GlobalProtect logs.
+  created: 1757621303772
+  size: 239897
+  numEvents: 500
+0Owi8V:
+  sampleName: secops-windows-event-log.log
+  description: Windows Event Log (XML)
+  created: 1757703974900
+  size: 668948
+  numEvents: 500

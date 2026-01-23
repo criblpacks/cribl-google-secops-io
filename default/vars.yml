@@ -1,0 +1,46 @@
+Palo_Alto_Networks_UDP_Port:
+  type: number
+  lib: PAN
+  value: "20000"
+Palo_Alto_Networks_TCP_Port:
+  type: number
+  lib: PAN
+  value: "20000"
+AWS_VPC_Flowlogs_Stream_Name:
+  type: string
+  lib: AWS
+  value: "'<Placeholder>'"
+  tags: AWS
+AWS_VPC_Flowlogs_Region:
+  type: string
+  lib: AWS
+  value: "'us-west-2'"
+  tags: AWS
+Cisco_ASA_UDP_Port:
+  type: number
+  lib: custom
+  value: "20001"
+Cisco_ASA_TCP_Port:
+  type: number
+  lib: custom
+  value: "20001"
+Fortigate_Firewall_UDP_Port:
+  type: number
+  lib: custom
+  value: "20002"
+Fortigate_Firewall_TCP_Port:
+  type: number
+  lib: custom
+  value: "20002"
+Google_SecOps_Namespace:
+  type: string
+  lib: custom
+  value: "''"
+Windows_Event_Log_Port:
+  type: number
+  lib: custom
+  value: "20003"
+Google_SecOps_Customer_ID:
+  type: string
+  lib: custom
+  value: "'3869023b-acaa-43d1-b62f-f57c76fa7054'"

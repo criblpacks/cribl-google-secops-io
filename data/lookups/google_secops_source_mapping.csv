@@ -1,0 +1,6 @@
+source,type,logtype
+"Palo Alto Networks Firewall",syslog,PAN_FIREWALL
+"Windows Event Logs","Cribl HTTP",WINEVTLOG
+"AWS VPC Flowlog","AWS Kinesis",AWS_VPC_FLOW
+"Cisco ASA",syslog,CISCO_ASA_FIREWALL
+"Fortigate Fortinet Firewall",syslog,FORTINET_FIREWALL

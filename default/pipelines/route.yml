@@ -1,0 +1,70 @@
+id: default
+groups: {}
+comments: []
+routes:
+  - id: m7aANd
+    name: Palo Alto Networks
+    final: true
+    disabled: false
+    pipeline: secops-pan
+    description: Palo Alto Networks to Google Sec Ops
+    enableOutputExpression: false
+    outputExpression: null
+    filter: __inputId.startsWith('syslog:cribl-secops.Palo_Alto_Networks:')
+    clones: []
+    output: cribl-secops
+  - id: J3p3do
+    name: AWS VPC Flowlogs
+    final: true
+    disabled: false
+    pipeline: secops-aws-vpc-flow
+    description: ""
+    enableOutputExpression: false
+    outputExpression: null
+    filter: __inputId.startsWith('kinesis:cribl-secops.AWS_VPC_Flowlogs:')
+    clones: []
+    output: cribl-secops
+  - id: HpKUEU
+    name: Cisco ASA
+    final: true
+    disabled: false
+    pipeline: secops-cisco-asa
+    description: Cisco ASA to Google Sec Ops
+    enableOutputExpression: false
+    outputExpression: null
+    filter: __inputId.startsWith('syslog:cribl-secops.Cisco_ASA:')
+    clones: []
+    output: cribl-secops
+  - id: hj7tyA
+    name: Fortigate Fortinet Firewall
+    final: true
+    disabled: false
+    pipeline: secops-fortigate-firewall
+    description: Fortigate Fortinet Firewall to Google Sec Ops
+    enableOutputExpression: false
+    outputExpression: null
+    filter: __inputId.startsWith('syslog:cribl-secops.Fortigate_Fortinet_Firewall:')
+    clones: []
+    output: cribl-secops
+  - id: YCrHQJ
+    name: Windows Event Logs
+    final: true
+    disabled: false
+    pipeline: secops-windows-event-log
+    description: ""
+    enableOutputExpression: false
+    outputExpression: null
+    filter: __inputId=='cribl_http:cribl-secops.Windows_Event_Log'
+    clones: []
+    output: cribl-secops
+  - id: default
+    name: default
+    final: true
+    disabled: false
+    pipeline: main
+    description: ""
+    enableOutputExpression: false
+    outputExpression: null
+    filter: "true"
+    clones: []
+    output: default

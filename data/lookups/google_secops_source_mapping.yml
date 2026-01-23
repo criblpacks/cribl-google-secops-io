@@ -1,0 +1,6 @@
+mode: memory
+id: google_secops_source_mapping.csv
+description: Mapping of the log types for each of the sources configured in this pack
+version: 2TafgxgU
+rows: 5
+size: 251
