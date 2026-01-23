@@ -1,13 +1,4 @@
 inputs:
-  palo:
-    disabled: false
-    sendToRoutes: true
-    pqEnabled: false
-    streamtags: []
-    samples:
-      - eventsPerSec: 1
-        sample: palo_alto_traffic
-    type: datagen
   Palo_Alto_Networks:
     disabled: true
     sendToRoutes: true
