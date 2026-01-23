@@ -1,0 +1,43 @@
+outputs:
+  cribl-secops:
+    systemFields:
+      - cribl_pipe
+    streamtags: []
+    apiVersion: v1alpha
+    authenticationMethod: serviceAccount
+    responseRetrySettings:
+      - httpStatus: 429
+        initialBackoff: 30000
+        backoffRate: 1
+        maxBackoff: 30000
+      - httpStatus: 500
+        initialBackoff: 30000
+        backoffRate: 1
+        maxBackoff: 30000
+      - httpStatus: 503
+        initialBackoff: 30000
+        backoffRate: 1
+        maxBackoff: 30000
+    timeoutRetrySettings:
+      timeoutRetry: false
+    responseHonorRetryAfterHeader: true
+    concurrency: 5
+    maxPayloadSizeKB: 1024
+    maxPayloadEvents: 0
+    compress: true
+    rejectUnauthorized: true
+    timeoutSec: 90
+    flushPeriodSec: 1
+    failedRequestLoggingMode: none
+    safeHeaders: []
+    useRoundRobinDns: false
+    onBackpressure: block
+    ingestionMethod: ImportLogs
+    type: chronicle
+    description: Output to Google Security Operations. Log type is set by the pipelines.
+    logType: CRIBL_STREAM
+    region: us
+    gcpProjectId: placeholder-gcp-project-id
+    gcpInstance: your_gcp_instance
+    logTextField: _raw
+    serviceAccountCredentials: your_google_secops_service_account_credentials

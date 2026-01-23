@@ -1,0 +1,146 @@
+inputs:
+  Palo_Alto_Networks:
+    disabled: true
+    sendToRoutes: true
+    pqEnabled: false
+    streamtags: []
+    host: 0.0.0.0
+    maxBufferSize: 1000
+    ipWhitelistRegex: /.*/
+    timestampTimezone: local
+    singleMsgUdpPackets: false
+    enableProxyHeader: false
+    keepFieldsList: []
+    octetCounting: false
+    inferFraming: true
+    strictlyInferOctetCounting: true
+    allowNonStandardAppName: false
+    maxActiveCxn: 1000
+    socketIdleTimeout: 0
+    socketEndingMaxWait: 30
+    socketMaxLifespan: 0
+    tls:
+      disabled: true
+    enableLoadBalancing: false
+    type: syslog
+    description: Syslog input for Palo Alto Networks Firewall
+    __template_udpPort: Palo_Alto_Networks_UDP_Port
+    udpPort: 20000
+    __template_tcpPort: Palo_Alto_Networks_TCP_Port
+    tcpPort: 20000
+  AWS_VPC_Flowlogs:
+    disabled: false
+    sendToRoutes: true
+    pqEnabled: false
+    streamtags: []
+    serviceInterval: 1
+    shardExpr: "true"
+    shardIteratorType: LATEST
+    payloadFormat: cloudwatch
+    getRecordsLimit: 5000
+    getRecordsLimitTotal: 20000
+    loadBalancingAlgorithm: ConsistentHashing
+    awsAuthenticationMethod: auto
+    signatureVersion: v4
+    reuseConnections: true
+    rejectUnauthorized: true
+    enableAssumeRole: false
+    durationSeconds: 3600
+    verifyKPLCheckSums: false
+    avoidDuplicates: false
+    type: kinesis
+    streamName: <Placeholder>
+    region: us-west-2
+    __template_region: AWS_VPC_Flowlogs_Region
+    __template_streamName: AWS_VPC_Flowlogs_Stream_Name
+    description: AWS VPC Flowlogs from Kinesis stream.
+    status:
+      health: Green
+      timestamp: 1757607216619
+      metrics:
+        persistentQueueSize: null
+        shards: 0
+        records: 0
+        events: 0
+        errors: 0
+  Cisco_ASA:
+    disabled: true
+    sendToRoutes: true
+    pqEnabled: false
+    streamtags: []
+    host: 0.0.0.0
+    maxBufferSize: 1000
+    ipWhitelistRegex: /.*/
+    timestampTimezone: local
+    singleMsgUdpPackets: false
+    enableProxyHeader: false
+    keepFieldsList: []
+    octetCounting: false
+    inferFraming: true
+    strictlyInferOctetCounting: true
+    allowNonStandardAppName: false
+    maxActiveCxn: 1000
+    socketIdleTimeout: 0
+    socketEndingMaxWait: 30
+    socketMaxLifespan: 0
+    tls:
+      disabled: true
+    enableLoadBalancing: false
+    type: syslog
+    description: Syslog input for Cisco ASA Firewall
+    __template_udpPort: Cisco_ASA_UDP_Port
+    udpPort: 20001
+    __template_tcpPort: Cisco_ASA_TCP_Port
+    tcpPort: 20001
+  Fortigate_Fortinet_Firewall:
+    disabled: true
+    sendToRoutes: true
+    pqEnabled: false
+    streamtags: []
+    host: 0.0.0.0
+    maxBufferSize: 1000
+    ipWhitelistRegex: /.*/
+    timestampTimezone: local
+    singleMsgUdpPackets: false
+    enableProxyHeader: false
+    keepFieldsList: []
+    octetCounting: false
+    inferFraming: true
+    strictlyInferOctetCounting: true
+    allowNonStandardAppName: false
+    maxActiveCxn: 1000
+    socketIdleTimeout: 0
+    socketEndingMaxWait: 30
+    socketMaxLifespan: 0
+    tls:
+      disabled: true
+    enableLoadBalancing: false
+    type: syslog
+    description: Syslog input for Cisco ASA Firewall
+    __template_udpPort: Fortigate_Firewall_UDP_Port
+    udpPort: 20002
+    __template_tcpPort: Fortigate_Firewall_TCP_Port
+    tcpPort: 20002
+  Windows_Event_Log:
+    disabled: true
+    sendToRoutes: true
+    pqEnabled: false
+    streamtags: []
+    host: 0.0.0.0
+    tls:
+      disabled: true
+    maxActiveReq: 256
+    maxRequestsPerSocket: 0
+    enableProxyHeader: false
+    captureHeaders: false
+    activityLogSampleRate: 100
+    requestTimeout: 0
+    socketTimeout: 0
+    keepAliveTimeout: 5
+    enableHealthCheck: false
+    ipAllowlistRegex: /.*/
+    ipDenylistRegex: /^$/
+    type: cribl_http
+    description: Windows Event logs from Cribl Edge
+    __template_port: Windows_Event_Log_Port
+    port: 20003
