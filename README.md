@@ -4,8 +4,7 @@
 
 ## About this Pack
 
-
-This Cribl Pack is designed to streamline the integration of common Cribl data sources with Google Security Operations (SecOps). It provides pre-configured sources, destinations, pipelines, and routes to format and enrich data from various sources, ensuring compatibility with Google SecOps ingestion requirements. The pack simplifies the process of collecting, normalizing, and forwarding security events, enabling efficient analysis and threat detection within the Google SecOps platform.
+This pack is built as a complete SOURCE + DESTINATION solution (identified by the IO suffix). Data collection and delivery happen entirely within the pack's context, eliminating the need to connect it to globally defined Sources and Destinations. This Cribl Pack is designed to streamline the integration of common Cribl data sources with Google Security Operations (SecOps). It provides pre-configured sources, destinations, pipelines, and routes to format and enrich data from various sources, ensuring compatibility with Google SecOps ingestion requirements. The pack simplifies the process of collecting, normalizing, and forwarding security events, enabling efficient analysis and threat detection within the Google SecOps platform.
 
 
 Key features include:
